@@ -1,0 +1,10 @@
+<h3>{{ track.artist }} - {{ track.title }}</h3>
+<h4>{{ track.date }}</h4>
+<p>
+  {{ track.comment }}
+</p>
+<div>
+  {{ track.url }}
+</div>
+<button ng-click="deleteTrack(post._id)" type="button" class="btn btn-danger">Delete</button>
+<button ng-click="editTrack(post._id)" type="button" class="btn btn-default">Edit</button>

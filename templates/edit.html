@@ -1,0 +1,27 @@
+<div  class="panel panel-default">
+  <div class="panel-body">
+<form role="form" ng-submit="editTrack(track)">
+  <div class="form-group">
+    <label for="new-track-title">Title:</label>
+    <input type="text" ng-model="track.title" value="{{track.title}}" class="form-control" id="new-track-title">
+  </div>
+  <div class="form-group">
+    <label for="new-track-artist">Artist:</label>
+    <input type="text" ng-model="track.artist" value="{{track.artist}}" class="form-control" id="new-track-artist">
+  </div>
+  <div class="form-group">
+    <label for="new-track-date">Release date:</label>
+    <input type="text" ng-model="track.date" value="{{track.date}}" class="form-control" id="new-track-date">
+  </div>
+  <div class="form-group">
+    <label for="new-track-comment">Comment:</label>
+    <textarea ng-model="track.comment" value="{{track.comment}}" class="form-control" name="new-track-comment"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="new-track-url">Embed URL:</label>
+    <input type="text" ng-model="track.url" value="{{track.url}}" class="form-control" id="new-track-url">
+  </div>
+  <button type="submit" class="btn btn-default">Submit Changes</button>
+</form>
+</div>
+</div>
